@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/BloodPressureProject/Data/mat/Part_4.mat
+/BloodPressureProject/Data/mat/Part_3.mat
+/BloodPressureProject/Data/mat/Part_2.mat
+/BloodPressureProject/Data/mat/Part_1.mat

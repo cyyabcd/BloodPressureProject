@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bf8ccb3c-1af4-4644-bf21-ec13940d581b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>BloodPressureProject.py</StartupFile>
+    <StartupFile>Data\testdata.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,34 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BloodPressureProject.py" />
+    <Compile Include="Data\mat2npy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\testdata.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Main.py" />
+    <Compile Include="Common\CNN\BaseBlock.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Common\CNN\" />
+    <Folder Include="Common\RNN\" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\mat\" />
+    <Folder Include="Data\npy\" />
+    <Folder Include="Model\" />
+    <Folder Include="Model\Python\" />
+    <Folder Include="Model\XML\" />
+    <Folder Include="Output\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\mat\Part_1.mat" />
+    <Content Include="Data\mat\Part_2.mat" />
+    <Content Include="Data\mat\Part_3.mat" />
+    <Content Include="Data\mat\Part_4.mat" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
